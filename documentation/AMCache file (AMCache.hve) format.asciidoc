@@ -664,24 +664,24 @@ Values:
 [cols="1,1,5",options="header"]
 |===
 | Value | Data type | Description
-| BinaryType | |
+| BinaryType | RegSz | PE Type (32 or 64 bit)
 | BinFileVersion | |
 | BinProductVersion | |
-| FileId | |
+| FileId | RegSz | SHA1 Hash (Padded with 0000 prefix)
 | IsOsComponent | |
 | IsPeFile | |
 | Language | |
-| LinkDate | |
-Contains a date and time string e.g. "12/15/2018 22:24:36"
+| LinkDate | RegSz | PE compile date and time,
+format e.g. "12/15/2018 22:24:36"
 | LongPathHash | |
-| LowerCaseLongPath | |
+| LowerCaseLongPath | RegSz | Full path in all lowercase
 | Name | |
 | ProductName | |
 | ProductVersion | |
 | ProgramId | | Program identifier (ProgramId)
 | Publisher | |
-| Size | |
-| Usn | |
+| Size | RegQword | File size
+| Usn | RegQword | Unknown
 | Version | |
 |===
 
